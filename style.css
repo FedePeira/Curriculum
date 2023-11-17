@@ -314,6 +314,85 @@ h3.my-profession{
     line-height: 40px;
 }
 
+.about .about-content .skills .skill-item .progress .bar_progress1{
+    background-color: #fff;
+    width: 95%;
+    height: 6px;
+    animation: progress1 2s forwards;
+}
+
+.about .about-content .skills .skill-item .progress .bar_progress2{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progress2 2s forwards;
+}
+
+.about .about-content .skills .skill-item .progress .bar_progress3{
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progress3 2s forwards;
+}
+
+.about .about-content .skills .skill-item .progress .bar_progress4{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progress4 2s forwards;
+}
+
+.about .about-content .skills .skill-item .progress .bar_progress4{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progress4 2s forwards;
+}
+
+.about .about-content .skills .skill-item .progress .bar_progress4{
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation: progress4 2s forwards;
+}
+
+/* ---------- ANIMACIONS SKILLS ----------- */
+@keyframes progress1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progress2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progress2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
 .about .about-content .education,
 .about .about-content .experience{
     flex: 0 0 50%;

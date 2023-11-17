@@ -35,3 +35,21 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+///////////////////////////////////////////////////////////
+// Scroll Skills Animation
+window.onscroll = function() {
+  efectSkills()
+}
+
+// Animation on skills
+function efectSkills() {
+  var skills = document.getElementById("skills");
+  var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+  if(distancia_skills >= 300) {
+      document.getElementById("html").classList.add("bar_progress1");
+      document.getElementById("js").classList.add("bar_progress2");
+      document.getElementById("bd").classList.add("bar_progress3");
+      document.getElementById("ps").classList.add("bar_progress4");
+  }
+}
