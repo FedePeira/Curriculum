@@ -1,13 +1,17 @@
 'use strict';
-/* ====================================== Typing Animation ============================================ */
- var typed = new Typed(".typing",{
-    strings: ["", "", "Diseñador Web", "Programador", "Estudiante", "Vendedor"],
-    typeSpeed:100,
-    BackSpeed:60,
-    loop:true
- }) 
+///////////////////////////////////////////////////////////
+// Type Animation
 
- ///////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function() {
+  var typed = new Typed(".typing",{
+      strings: ["Diseñador Web", "Programador", "Estudiante", "Vendedor"],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+  });
+});
+
+///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
@@ -45,11 +49,31 @@ window.onscroll = function() {
 // Animation on skills
 function efectSkills() {
   var skills = document.getElementById("skills");
-  var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+  var distancia_skills = window.scrollY + skills.getBoundingClientRect().top;
   if(distancia_skills >= 300) {
-      document.getElementById("html").classList.add("bar_progress1");
-      document.getElementById("js").classList.add("bar_progress2");
-      document.getElementById("bd").classList.add("bar_progress3");
-      document.getElementById("ps").classList.add("bar_progress4");
+      document.getElementById("css").classList.add("css");
+      document.getElementById("js").classList.add("js");
+      document.getElementById("html").classList.add("html");
+      document.getElementById("net").classList.add("net");
+      document.getElementById("sql").classList.add("sql");
+      document.getElementById("php").classList.add("php");
+      document.getElementById("react").classList.add("react");
+      document.getElementById("android").classList.add("android");
+      document.getElementById("java").classList.add("java");
   }
 }
+
+///////////////////////////////////////////////////////////
+// Scroll Skills Animation
+window.onload = function() {
+  var timelineBoxes = document.querySelectorAll('.timeline-box');
+
+  timelineBoxes.forEach(function(box) {
+      box.addEventListener('mouseover', function() {
+          var timelineItems = box.querySelectorAll('.timeline-item');
+          timelineItems.forEach(function(item) {
+              item.classList.add('visible');
+          });
+      }, { once: true });
+  });
+};

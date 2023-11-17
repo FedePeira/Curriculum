@@ -79,6 +79,7 @@ ul{
     border-left: 5px solid var(--skin-color);
     bottom: 0;
     left: 0;
+    animation: pulseBeforeLogo 2s infinite;
 }
  
 .aside .logo a::after{
@@ -90,6 +91,32 @@ ul{
     border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
+    animation: pulseAfterLogo 2s infinite;
+}
+
+
+@keyframes pulseAfterLogo {
+    0% {
+        border-width: 5px;
+    }
+    50% {
+        border-width: 10px;
+    }
+    100% {
+        border-width: 5px;
+    }
+}
+
+@keyframes pulseBeforeLogo {
+    0% {
+        border-width: 5px;
+    }
+    50% {
+        border-width: 10px;
+    }
+    100% {
+        border-width: 5px;
+    }
 }
 
 
@@ -175,6 +202,7 @@ h3.my-profession{
     border-right: 10px solid var(--skin-color);
     right: 0px;
     bottom: -40px;
+    animation: pulseAfter 2s infinite;
 }
 
 .home-img::before{
@@ -186,6 +214,31 @@ h3.my-profession{
     border-left: 10px solid var(--skin-color);
     left: -20px;
     top: -40px;
+    animation: pulseBefore 2s infinite;
+}
+
+@keyframes pulseAfter {
+    0% {
+        border-width: 10px;
+    }
+    50% {
+        border-width: 20px;
+    }
+    100% {
+        border-width: 10px;
+    }
+}
+
+@keyframes pulseBefore {
+    0% {
+        border-width: 10px;
+    }
+    50% {
+        border-width: 20px;
+    }
+    100% {
+        border-width: 10px;
+    }
 }
 
 .home .home-img img{
@@ -194,6 +247,8 @@ h3.my-profession{
     height: 400px;
     margin-right: 10px;
 }
+
+
 
 /* ===================================== */
                 /* Aside */
@@ -314,59 +369,95 @@ h3.my-profession{
     line-height: 40px;
 }
 
-.about .about-content .skills .skill-item .progress .bar_progress1{
-    background-color: #fff;
+.about .about-content .skills .skill-item .progress .css{
+    background-color: var(--skin-color);
     width: 95%;
     height: 6px;
-    animation: progress1 2s forwards;
+    animation: css 2s forwards;
 }
 
-.about .about-content .skills .skill-item .progress .bar_progress2{
-    background-color: #fff;
+.about .about-content .skills .skill-item .progress .js{
+    background-color: var(--skin-color);
     width: 90%;
     height: 6px;
-    animation: progress2 2s forwards;
+    animation: js 2s forwards;
 }
 
-.about .about-content .skills .skill-item .progress .bar_progress3{
-    background-color: #fff;
+.about .about-content .skills .skill-item .progress .html{
+    background-color: var(--skin-color);
     width: 85%;
     height: 6px;
-    animation: progress3 2s forwards;
+    animation: html 2s forwards;
 }
 
-.about .about-content .skills .skill-item .progress .bar_progress4{
-    background-color: #fff;
+.about .about-content .skills .skill-item .progress .net{
+    background-color: var(--skin-color);
     width: 90%;
     height: 6px;
-    animation: progress4 2s forwards;
+    animation: net 2s forwards;
 }
 
-.about .about-content .skills .skill-item .progress .bar_progress4{
-    background-color: #fff;
+.about .about-content .skills .skill-item .progress .sql{
+    background-color: var(--skin-color);
     width: 90%;
     height: 6px;
-    animation: progress4 2s forwards;
+    animation: sql 2s forwards;
 }
 
-.about .about-content .skills .skill-item .progress .bar_progress4{
-    background-color: #fff;
+.about .about-content .skills .skill-item .progress .php{
+    background-color: var(--skin-color);
     width: 90%;
     height: 6px;
-    animation: progress4 2s forwards;
+    animation: php 2s forwards;
+}
+.about .about-content .skills .skill-item .progress .react{
+    background-color: var(--skin-color);
+    width: 90%;
+    height: 6px;
+    animation: react 2s forwards;
+}
+.about .about-content .skills .skill-item .progress .android{
+    background-color: var(--skin-color);
+    width: 90%;
+    height: 6px;
+    animation: android 2s forwards;
+}
+.about .about-content .skills .skill-item .progress .java{
+    background-color: var(--skin-color);
+    width: 90%;
+    height: 6px;
+    animation: java 2s forwards;
 }
 
 /* ---------- ANIMACIONS SKILLS ----------- */
-@keyframes progress1 {
+@keyframes css {
     0% {
         width: 0;
     }
     100% {
-        width: 95%;
+        width: 65%;
     }
 }
 
-@keyframes progress2 {
+@keyframes js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes java {
     0% {
         width: 0;
     }
@@ -375,23 +466,51 @@ h3.my-profession{
     }
 }
 
-@keyframes progress2 {
+@keyframes net {
     0% {
         width: 0;
     }
     100% {
-        width: 85%;
+        width: 30%;
     }
 }
 
-@keyframes progress2 {
+@keyframes sql {
     0% {
         width: 0;
     }
     100% {
-        width: 90%;
+        width: 50%;
     }
 }
+
+@keyframes php {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes android {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
 
 .about .about-content .education,
 .about .about-content .experience{
@@ -425,7 +544,14 @@ h3.my-profession{
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.about .about-content .timeline .timeline-item.visible{
+    opacity: 1;
+}
+
 
 .about .about-content .timeline .timeline-item:last-child{
     padding-bottom: 0;
