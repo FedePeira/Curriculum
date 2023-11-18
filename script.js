@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   var typed = new Typed(".typing",{
-      strings: ["Diseñador Web", "Programador", "Estudiante", "Vendedor"],
+      strings: ["Web designer", "Programmer", "Student", "Seller"],
       typeSpeed:100,
       backSpeed:60,
       loop:true
@@ -66,14 +66,10 @@ function efectSkills() {
 ///////////////////////////////////////////////////////////
 // Scroll Skills Animation
 window.onload = function() {
-  var timelineBoxes = document.querySelectorAll('.timeline-box');
-
-  timelineBoxes.forEach(function(box) {
-      box.addEventListener('mouseover', function() {
-          var timelineItems = box.querySelectorAll('.timeline-item');
-          timelineItems.forEach(function(item) {
-              item.classList.add('visible');
-          });
-      }, { once: true });
-  });
+  var timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach(function(item) {
+        item.addEventListener('mouseover', function() {
+            item.classList.add('visible');
+        });
+    });
 };
