@@ -31,6 +31,69 @@ body{
 ul{
     list-style: none;
 }
+
+.check-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.en {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.es{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.en-selected {
+    color: var(--skin-color);
+}
+
+.es-selected {
+    color: var(--text-black-900);
+}
+
+.check {
+    position: relative;
+    width: 50px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked:before{
+    background: #00a1ff;
+}
+
+
 /* ===================================== */
                 /* Aside */
 /* ===================================== */
@@ -371,60 +434,60 @@ h3.my-profession{
 
 .about .about-content .skills .skill-item .progress .css{
     background-color: var(--skin-color);
-    width: 95%;
+    width: 100%;
     height: 6px;
     animation: css 2s forwards;
 }
 
 .about .about-content .skills .skill-item .progress .js{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: js 2s forwards;
 }
 
 .about .about-content .skills .skill-item .progress .html{
     background-color: var(--skin-color);
-    width: 85%;
+    width: 100%;
     height: 6px;
     animation: html 2s forwards;
 }
 
 .about .about-content .skills .skill-item .progress .net{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: net 2s forwards;
 }
 
 .about .about-content .skills .skill-item .progress .sql{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: sql 2s forwards;
 }
 
 .about .about-content .skills .skill-item .progress .php{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: php 2s forwards;
 }
 .about .about-content .skills .skill-item .progress .react{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: react 2s forwards;
 }
 .about .about-content .skills .skill-item .progress .android{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: android 2s forwards;
 }
 .about .about-content .skills .skill-item .progress .java{
     background-color: var(--skin-color);
-    width: 90%;
+    width: 100%;
     height: 6px;
     animation: java 2s forwards;
 }
@@ -444,7 +507,7 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 25%;
+        width: 45%;
     }
 }
 
@@ -453,7 +516,7 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -480,7 +543,7 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -489,7 +552,7 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -498,7 +561,7 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 50%;
+        width: 40%;
     }
 }
 
@@ -507,7 +570,7 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 50%;
+        width: 80%;
     }
 }
 

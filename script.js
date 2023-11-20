@@ -73,3 +73,44 @@ window.onload = function() {
         });
     });
 };
+
+///////////////////////////////////////////////////////////
+// Change of Language
+document.addEventListener('DOMContentLoaded', (event) => {
+  var check = document.querySelector(".check");
+  check.addEventListener('click', changeLanguage);
+
+  // Aplica los colores correctos al cargar la página
+  let language = localStorage.getItem('language');
+  applyColors(language);
+
+  function changeLanguage() {
+      let id = check.checked;
+      let enElement = document.querySelector('.en');
+      let esElement = document.querySelector('.es');
+      
+      if(id == false) {
+          localStorage.setItem('language', 'es');
+          setTimeout(function() {
+              location.href = "/es/index.html";
+          }, 100);
+      } else {
+          localStorage.setItem('language', 'en');
+          setTimeout(function() {
+              location.href = "/index.html";
+          }, 100);
+      }
+  }
+
+  function applyColors(language) {
+      let enElement = document.querySelector('.en');
+      let esElement = document.querySelector('.es');
+      if (language === 'es') {
+          enElement.classList.remove('es-selected');
+          esElement.classList.add('en-selected');
+      } else {
+          enElement.classList.add('en-selected');
+          esElement.classList.remove('es-selected');
+      }
+  }
+});
