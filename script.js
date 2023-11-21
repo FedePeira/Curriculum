@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
-
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
@@ -114,3 +114,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
   }
 });
+
+///////////////////////////////////////////////////////////
+// Media 1150px
+/*
+window.addEventListener('resize', function() {
+  var width = window.innerWidth;
+  var header = document.querySelector('.header');
+  var aside = document.querySelector('.aside');
+  var home = document.querySelector('.home');
+
+
+  if (width <= 1150) {
+    aside.classList.add('hidden');
+    header.classList.remove('hidden');
+    home.classList.add('margin--top-2')
+  } else {
+    aside.classList.remove('hidden');
+    header.classList.add('hidden');
+    home.classList.remove('margin--top-2')
+  }
+});
+*/

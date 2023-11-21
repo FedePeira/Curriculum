@@ -32,10 +32,19 @@ ul{
     list-style: none;
 }
 
+/* ===================================== */
+    /* Change(Check) of Language 2 */
+/* ===================================== */
 .check-language {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    cursor: pointer;
 }
 
 .en {
@@ -43,6 +52,7 @@ ul{
     font-weight: 600;
     margin: 10px;
 }
+
 
 .es{
     font-size: 16px;
@@ -56,11 +66,6 @@ ul{
 
 .es-selected {
     color: var(--text-black-900);
-}
-
-.check {
-    position: relative;
-    width: 50px;
 }
 
 .check::before{
@@ -93,9 +98,124 @@ ul{
     background: #00a1ff;
 }
 
+/* ===================================== */
+                /* Header 2 */
+/* ===================================== */
+/*
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:var(--bg-black-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.check-header {
+    width: 50px;
+    cursor: pointer;
+}
+
+.check-language-header {
+    display: inline;
+}
+
+.check-header::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check-header::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check-header:checked:after{
+    border: 2px solid #00a1ff;
+}
+
+.check-header:checked:before{
+    background: #00a1ff;
+    
+}
+
+.header .logo-header{
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.header .logo-header a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.header .logo-header a span{
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+}
+
+.header .logo-header a::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 20px;
+    left: 95px;
+    animation: pulseBeforeLogo 2s infinite;
+}
+ 
+.header .logo-header a::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    animation: pulseAfterLogo 2s infinite;
+}
+
+.header .navbar a {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+
+.aside .nav li a:hover{
+    color: var(--skin-color);
+}
+
+.aside .nav li a li {
+    margin-right: 15px;
+}
+*/
 
 /* ===================================== */
-                /* Aside */
+                /* Header 1 */
 /* ===================================== */
 .aside{
     width: 270px;
@@ -208,6 +328,7 @@ ul{
 .aside .nav li a li {
     margin-right: 15px;
 }
+
 /* ===================================== */
                 /* Home */
 /* ===================================== */
