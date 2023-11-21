@@ -116,7 +116,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 ///////////////////////////////////////////////////////////
-// Media 1150px
+// Hamburguer Menu
+const openButton = document.querySelector("#open");
+const closeButton = document.querySelector("#close");
+const navHeader = document.querySelector("#nav");
+const header = document.querySelector("#header");
+
+
+openButton.addEventListener("click", () => {
+  navHeader.classList.add("visible");
+  header.classList.remove("hidden");
+})
+
+closeButton.addEventListener("click", () => {
+  navHeader.classList.remove("visible");
+  header.classList.add("hidden");
+})
+
 /*
 window.addEventListener('resize', function() {
   var width = window.innerWidth;

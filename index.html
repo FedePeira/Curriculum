@@ -19,7 +19,7 @@
     <!-- =========== Main Container Start =========== -->
     <div class="main-container">
         <!-- =========== Aside Start =========== -->
-        <div class="aside">
+        <div id="menu" class="aside">
             <div class="logo">
                 <a href="#"><span>C</span>urriculum</a>
                 <div class="check-language">
@@ -41,31 +41,23 @@
         </div>
         <!-- =========== Aside End =========== -->
         <!-- =========== Header Start =========== -->
-        <!-- 
-        <header class="header hidden">
-            <div class="logo-header">
-                <a href="#"><span>C</span>urriculum</a>
-            </div>
-            <div class="check-language-header">
-                <span class="es">Spanish</span>
-                <input type="checkbox" class="check-header" checked>
-                <span class="en">English</span>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <nav class="navbar">
-                <a href="#main"><i class="fa fa-home"></i> Main</a>
-                <a href="#aboutme"><i class="fa fa-user"></i> About Me</a>
-                <a href="#services"><i class="fa fa-list"></i> Services</a>
-                <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
-                <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        
+        <header id="header" class="header hidden">
+            <nav id="nav" class="nav">
+                <ul class="nav-list">
+                    <button id="close" class="close-menu">Cerrar</button>
+                    <li><a href="#main"><i class="fa fa-home"></i> Main</a></li>
+                    <li><a href="#aboutme"><i class="fa fa-user"></i> About Me</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+                </ul>
             </nav>
         </header>
-        -->
         <!-- =========== Header End =========== -->
         <!-- =========== Main Content Start =========== -->
         <div class="main-content">
+            <button id="open" class="open-menu">Abrir</button>
             <!-- =========== Home Section Start =========== -->
             <section class="home section" id="main">
                 <div class="container">
