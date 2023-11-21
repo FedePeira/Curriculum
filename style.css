@@ -121,7 +121,7 @@ ul{
     .header .nav {
         opacity: 0;
         visibility: hidden;
-
+        
         display: flex;
         align-items: end;
         flex-direction: column;
@@ -132,9 +132,11 @@ ul{
         top: 0;
         bottom: 0;
         padding: 30px;
+        z-index: 10;
         border-right: 1px solid var(--bg-black-50);
     }
-    
+
+
     .header .nav.visible{
         opacity: 1;
         visibility: visible;
@@ -193,6 +195,7 @@ ul{
         border-bottom: 1px solid var(--bg-black-50);
         color: var(--text-black-900);
         padding: 5px 15px;
+        margin: 10px;
     }
     
     .header .nav .nav-list li a:hover{
