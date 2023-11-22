@@ -821,12 +821,8 @@ h3.my-profession{
 /* ===================================== */
             /* Portfolio */
 /* ===================================== */
-.portfolio .container{
-    padding-bottom: 20px;
-}
-
 .portfolio .portfolio-heading{
-    flex: 0 0 100%;
+    flex: 100% 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
@@ -847,13 +843,14 @@ h3.my-profession{
 
 .portfolio .portfolio-item-inner .description{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .portfolio .portfolio-item-inner .center {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .portfolio .portfolio-item-inner .main-video {
@@ -866,10 +863,16 @@ h3.my-profession{
     align-items: left;
 }
 
-.mar-40
- {
+.mar-40{
     margin-top: 50px;
- }
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        border-bottom: 2px solid var(--bg-black-50);
+        margin-top: 50px;
+    }
+}   
 
 
 /* ===================================== */
@@ -969,7 +972,7 @@ h3.my-profession{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 330px;
+    padding: 15px;
 }
 
 .btn-whatsapp{
