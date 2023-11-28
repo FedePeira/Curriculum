@@ -152,3 +152,18 @@ window.addEventListener('resize', function() {
   }
 });
 */
+
+///////////////////////////////////////////////////////////
+// Home Image Hidden 991px
+function checkWindowSize() {
+  var width = window.innerWidth;
+  var homeImg = document.getElementById('home-img');
+
+  if (width <= 991) {
+      homeImg.classList.add('hidden');
+  } else {
+      homeImg.classList.remove('hidden');
+  }
+}
+checkWindowSize();
+window.addEventListener('resize', checkWindowSize);
