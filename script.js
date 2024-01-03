@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   var typed = new Typed(".typing",{
-      strings: ["Web designer", "Programmer", "Student", "Seller"],
+      strings: ["Web designer", "Programmer", "Student", "Developer"],
       typeSpeed:100,
       backSpeed:60,
       loop:true
