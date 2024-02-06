@@ -853,16 +853,6 @@ h3.my-profession{
     margin-bottom: 5px;
 }
 
-.portfolio .portfolio-item-inner .main-video {
-    padding: 50px 0;
-}
-  
-.portfolio .portfolio-item-inner .main-video center video {
-    width: 100%;
-    max-width: 500px;
-    align-items: left;
-}
-
 .mar-40{
     margin-top: 50px;
 }
