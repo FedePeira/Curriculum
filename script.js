@@ -11,6 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var typed = new Typed(".typing-es",{
+      strings: ["Diseñador Web", "Programador", "Estudiante", "Desarrollador"],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+  });
+});
+
 
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
@@ -57,6 +66,7 @@ function efectSkills() {
       document.getElementById("sql").classList.add("sql");
       document.getElementById("php").classList.add("php");
       document.getElementById("react").classList.add("react");
+      document.getElementById("reactnative").classList.add("reactnative");
       document.getElementById("android").classList.add("android");
       document.getElementById("java").classList.add("java");
   }

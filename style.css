@@ -329,6 +329,10 @@ h3.my-profession{
     color: var(--skin-color);
 }
 
+.typing-es{
+    color: var(--skin-color);
+}
+
 .home-info p{
     margin-bottom: 70px;
     font-size: 20px;
@@ -565,6 +569,12 @@ h3.my-profession{
     height: 6px;
     animation: react 2s forwards;
 }
+.about .about-content .skills .skill-item .progress .reactnative{
+    background-color: var(--skin-color);
+    width: 100%;
+    height: 6px;
+    animation: reactnative 2s forwards;
+}
 .about .about-content .skills .skill-item .progress .android{
     background-color: var(--skin-color);
     width: 100%;
@@ -647,7 +657,16 @@ h3.my-profession{
         width: 0;
     }
     100% {
-        width: 20%;
+        width: 60%;
+    }
+}
+
+@keyframes reactnative {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
     }
 }
 
