@@ -12,6 +12,10 @@
     <!--GLIDEJS CAROUSEL-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--STYLESHEET-->
     <script src="https://kit.fontawesome.com/3dbfc5dd3b.js" crossorigin="anonymous"></script>
 </head>
@@ -34,7 +38,6 @@
             <ul class="nav">
                 <li><a href="#main"><i class="fa fa-home"></i> Inicio</a></li>
                 <li><a href="#aboutme"><i class="fa fa-user"></i> Sobre mi</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i> Habilidades</a></li>
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i> Contacto</a></li>
             </ul>
@@ -42,6 +45,7 @@
         <!-- =========== Aside End =========== -->
         <!-- =========== Main Content Start =========== -->
         <div class="main-content">
+
             <!-- =========== Home Section Start =========== -->
             <section class="home section" id="main">
                 <div class="container">
@@ -49,8 +53,7 @@
                         <div class="home-info padd-15">
                             <h3 class="hello">Hola, mi nombre es <span class="name">Federico Peirano</span></h3>
                             <h3 class="my-profession">Yo soy <span class="typing-es">Web designer</span></h3>
-                            <p>Tengo 20 años, enfocado y obsesionado con la programación con un nivel B2 de inglés, egresado con honores de la orientación TIC en el colegio Ort y actualmente estudiante de la carrera de Analista de Sistemas en el terciario del colegio Ort.</p>
-                            <a href="#contact" class="btn hire-me">Contratame</a>
+                            <p>Tengo 20 años, enfocado y obsesionado con la programación con un nivel B2 de inglés, graduado con honores de la orientación TIC en la Escuela Técnica Ort y egresado de la carrera de Analista de Sistemas en el terciario del colegio Ort.</p>
                         </div>
                         <div class="home-img padd-15">
                             <img src="../Imagenes/Foto.jpg" alt="">
@@ -59,6 +62,7 @@
                 </div>
             </section>
             <!-- =========== Home Section End =========== -->
+
             <!-- =========== About Section Start =========== -->
             <section class="about section" id="aboutme">
                 <div class="container">
@@ -69,7 +73,7 @@
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
-                            <div class="row">
+                            <div class="row center">
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
@@ -82,95 +86,13 @@
                                             <p>Carrera: <span>Analista de Sistemas</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Secundario: <span>Tecnologia de la Información y la Comunicación</span></p>
+                                            <p>Secundario: <span>Orientacion de Tecnologia de la Información y la Comunicación</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Telefono: <span>+54 11 3627-4534</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Ubicación: <span>Argentina, Buenos Aires, San Isidro</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Github: <span>https://github.com/FedePeira</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15 center">
-                                            <a download="CV" href="./Federico Peirano (5).pdf" class="btn">Descargar CV</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15" id="skills">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div id="css"  class="" ></div>
-                                                <div class="skill-percent">65%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Javascript</h5>
-                                            <div class="progress">
-                                                <div id="js" class="" ></div>
-                                                <div class="skill-percent">45%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div id="html" class="" ></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JAVA</h5>
-                                            <div class="progress">
-                                                <div id="java" class="" ></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>.NET</h5>
-                                            <div class="progress">
-                                                <div id="net" class="" ></div>
-                                                <div class="skill-percent">30%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>SQL</h5>
-                                            <div class="progress">
-                                                <div id="sql" class=""></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
-                                            <div class="progress">
-                                                <div id="php" class="" ></div>
-                                                <div class="skill-percent">70%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>React</h5>
-                                            <div class="progress">
-                                                <div id="react" class="" ></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>React Native</h5>
-                                            <div class="progress">
-                                                <div id="reactnative" class="" ></div>
-                                                <div class="skill-percent">30%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Android Studio (Kotlin)</h5>
-                                            <div class="progress">
-                                                <div id="android" class="" ></div>
-                                                <div class="skill-percent">80%</div>
-                                            </div>
+                                            <p>Ubicación: <span>San Isidro, Buenos Aires, Argentina</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -181,23 +103,23 @@
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
-                                                <!-- =========== Timeline Item =========== -->
-                                                <div class="timeline-item">
+                                                 <!-- =========== Timeline Item =========== -->
+                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2015 - 2021
+                                                            <i class="fa fa-calendar"></i> Marzo 2022 - Diciembre 2024
                                                         </h3>
-                                                        <h4 class="timeline-title">Colegio Secundario</h4>
-                                                        <p class="timeline-text">Graduado con honores en la orientación TIC del Instituto ORT campus Belgrano</p>
+                                                        <h4 class="timeline-title">Terciario</h4>
+                                                        <p class="timeline-text">Egresado de la carrera de Analista de Sistemas en el Instituto ORT campus Belgrano.</p>
                                                 </div>
                                                 <!-- =========== Timeline Item =========== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2022 - 2024
+                                                            <i class="fa fa-calendar"></i> Marzo 2016 - Diciembre 2021
                                                         </h3>
-                                                        <h4 class="timeline-title">Terciario</h4>
-                                                        <p class="timeline-text">Egresado de la carrera de Analista de Sistemas en el Instituto ORT campus Belgrano.</p>
+                                                        <h4 class="timeline-title">Colegio Secundario</h4>
+                                                        <p class="timeline-text">Graduado con honores en la orientación TIC del Instituto ORT campus Belgrano</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,19 +134,21 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2022
-                                                        </h3>
-                                                        <h4 class="timeline-title">Vendedor</h4>
-                                                        <p class="timeline-text">Durante el año 2023 estuve trabajando como vendedor en la juguetería Apio Verde durante las épocas del Día del Niño, Navidad y Reyes Magos.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2023
+                                                            <i class="fa fa-calendar"></i>Julio 2023 - Continuando
                                                         </h3>
                                                         <h4 class="timeline-title">Programador Freelance Remoto</h4>
                                                         <p class="timeline-text">Comencé en julio de 2023 en Clarity, empresa enfocada en el sistema de gestión de otras empresas.</p>
                                                 </div>
+                                                <!-- =========== Timeline Item =========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 17/07/22 - 31/07/22
+                                                        </h3>
+                                                        <h4 class="timeline-title">Vendedor</h4>
+                                                        <p class="timeline-text">Durante el año 2023 estuve trabajando como vendedor en la juguetería Apio Verde durante las épocas del Día del Niño, Navidad y Reyes Magos.</p>
+                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -235,129 +159,7 @@
                 </div>
             </section>
             <!-- =========== About Section End =========== -->
-            <!-- =========== Services Section Start =========== -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">   
-                        <div class="section-title padd-15">
-                            <h2>Habilidades Técnicas</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-html5"></i>
-                                </div>
-                                <h4>HTML</h4>
-                                <p>Proyectos realizados con html y aprendizaje con un curso de Udemy.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-square-js"></i>
-                                </div>
-                                <h4>Javascript</h4>
-                                <p>Curso de aprendizaje a través de Udemy.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-css3-alt"></i>
-                                </div>
-                                <h4>CSS</h4>
-                                <p>Proyectos realizados con CSS y aprendizaje con un curso de Udemy.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-battle-net"></i>
-                                </div>
-                                <h4>.NET</h4>
-                                <p>Materia cursada en el segundo semestre de la carrera.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>SQL</h4>
-                                <p>Asignatura cursada también en el segundo semestre de la carrera.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-java"></i>
-                                </div>
-                                <h4>JAVA</h4>
-                                <p>Materia cursada en los dos semestres del primer año de la carrera.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                        <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-react"></i>
-                                </div>
-                                <h4>React Native</h4>
-                                <p>Realizar una solicitud para mi Proyecto Final, MediGo.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-php"></i>
-                                </div>
-                                <h4>PHP</h4>
-                                <p>Últimamente desarrollando todo en PHP, de momento el lenguaje que más me interesa</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-android"></i>
-                                </div>
-                                <h4>Android Studio / Kotlin</h4>
-                                <p>Materia cursada en el último semestre de la carrera</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-react"></i>
-                                </div>
-                                <h4>React</h4>
-                                <p>Curso hecho en https://fullstackopen.com/es/#course-contents, todos los proyectos en mi github</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                    </div>  
-                </div>
-            </section>
-            <!-- =========== Services Section End =========== -->
+
             <!-- =========== Portfolio Section Start =========== -->
             <section class="portfolio section" id="portfolio">
                 <div class="container">
@@ -372,82 +174,43 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <h3>Operación de un Banco Digital</h3>
-                                <p class="description">Banco de ejercicios con Javascript, HTML y CSS(Usuario: JS - Contraseña: 1111)</p>
-                                <div class="center">
-                                    <a href="https://bankistfunction.netlify.app" class="btn btn-porfolio">Visit</a>
+                        <div class="container-card">
+                            <div class="card">
+                                <figure>
+                                    <img src="../Imagenes/BankistCaptura.PNG">
+                                </figure>
+                                <div class="contenido-card">
+                                    <h4 class="timeline-title">Operación de un Banco Digital</h3>
+                                    <p class="timeline-text">Javascript - HTML - CSS(Usuario: JS - Contraseña: 1111)</p>
+                                    <a href="https://bankistfunction.netlify.app" class="btn btn-porfolio">Visitar</a>
                                 </div>
-                                <!--
-                                <div class="main-video">
-                                    <center>
-                                       <video class="video" controls>
-                                            <source src="./videos/BankistFunction.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
                             </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <h3>Página Web de Banco</h3>
-                                <p class="description">Página del Banco de Ejercicios con Javascript, HTML y CSS</p>
-                                <div class="center">
+                            <div class="card">
+                                <figure>
+                                    <img src="../Imagenes/BankistPageCaptura.PNG">
+                                </figure>
+                                <div class="contenido-card">
+                                    <h4 class="timeline-title">Página de Banco</h3>
+                                    <p  class="timeline-text">Javascript - HTML - CSS</p>
                                     <a href="https://bankistpage.netlify.app" class="btn btn-porfolio">Visitar</a>
                                 </div>
-                                <!--
-                                <div class="main-video">
-                                    <center>
-                                       <video class="video" controls>
-                                            <source  src="./videos/BankisPage.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
                             </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <h3>Página de Comida</h3>
-                                <p class="description">Página de ejercicios con Javascript, HTML y CSS </p>
-                                <div class="center">
+                            <div class="card">
+                                <figure>
+                                    <img src="../Imagenes/OmnifoodPage.JPG">
+                                </figure>
+                                <div class="contenido-card">
+                                    <h4 class="timeline-title">Página de Comida</h3>
+                                    <p class="timeline-text">Javascript - HTML - CSS</p>
                                     <a href="https://omnifoodpeira.netlify.app/" class="btn btn-porfolio">Visitar</a>
                                 </div>
-                                <!--
-                                <div class="main-video margin--top-1">
-                                    <center>
-                                       <video class="video width--1" controls>
-                                            <source src="./videos/Modelo Instituto.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15 mar-40">
-                            <div class="portfolio-item-inner">
-                                <h3>APK Aplicación MediGo</h3>
-                                <p class="description">Solicitud realizada en Proyecto Final para ORT en 2 meses y medio</p>
-                                <div class="center">
-                                    <a href="./app-release (1).apk" class="btn btn-porfolio" download>Descargar en el telefono</a>
-                                </div>
-                                <!--
-                                <div class="main-video margin--top-1">
-                                    <center>
-                                       <video class="video width--1" controls>
-                                            <source src="./videos/Modelo Instituto.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- =========== Portfolio Section End =========== -->
+
             <!-- =========== Contact Section End =========== -->
             <section class="contact section" id="contact">
                 <div class="container">
@@ -456,11 +219,7 @@
                             <h2>Contactame</h2>
                         </div>
                     </div>
-                    <!--
-                    <h3 class="contact-title padd-15">Tiene usted alguna pregunta ?</h3>
-                    <h4 class="contact-sub-title padd-15">Estoy a tu disponibilidad</h4>
-                -->
-                    <div class="row">
+                    <div class="row center">
                         <!-- =========== Contact Item Start =========== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
@@ -472,7 +231,7 @@
                         <div class="contact-info-item" padd-15>
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                             <h4>Ubicación</h4>
-                            <p>Argentina, Buenos Aires, San Isidro</p>
+                            <p>San Isidro, Buenos Aires, Argentina</p>
                         </div>
                         <!-- =========== Contact Item End =========== -->
                         <!-- =========== Contact Item Start =========== -->
@@ -482,24 +241,7 @@
                             <p>fedepr2345@gmail.com</p>
                         </div>
                         <!-- =========== Contact Item End =========== -->
-                        <!-- =========== Contact Item Start =========== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Página Web</h4>
-                            <p>https://federicopeirano.netlify.app/</p>
-                        </div>
-                        <!-- =========== Contact Item End =========== -->
                     </div>
-                    <!-- =========== Contact Form Start =========== -->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="btns-contact padd-15">
-                                <a href="https://web.whatsapp.com/" target="_blank"><button class="btn btn-whatsapp">Whatsapp</button></a>
-                                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqVNfDKVbqjBrgfDSjzXKbZcxrDmGcBkTrxNNxTTPfCQnKZPQNqXjDGkbcxgjSrDFHgpNV"><button class="btn btn-whatsapp">Email</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =========== Contact Form End =========== -->
                 </div>
             </section>
             <!-- =========== Contact Section End =========== -->

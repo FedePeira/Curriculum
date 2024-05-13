@@ -12,6 +12,14 @@
     <!--GLIDEJS CAROUSEL-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <!-- CARRUSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
     <!--STYLESHEET-->
     <script src="https://kit.fontawesome.com/3dbfc5dd3b.js" crossorigin="anonymous"></script>
 </head>
@@ -34,28 +42,11 @@
             <ul class="nav">
                 <li><a href="#main"><i class="fa fa-home"></i> Main</a></li>
                 <li><a href="#aboutme"><i class="fa fa-user"></i> About Me</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i> Skills</a></li>
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
         </div>
         <!-- =========== Aside End =========== -->
-        <!-- =========== Header Start =========== -->
-        
-        <header id="header" class="header hidden">
-            <nav id="nav" class="nav">
-                <ul class="nav-list">
-                    <button id="close" class="close-menu"><i class="fa-solid fa-xmark"></i></button>
-                    <li><a href="#main"><i class="fa fa-home"></i> Main</a></li>
-                    <li><a href="#aboutme"><i class="fa fa-user"></i> About Me</a></li>
-                    <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
-                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- =========== Header End =========== -->
-        <!-- =========== Main Content Start =========== -->
         <div class="main-content">
             <button id="open" class="open-menu"><i class="fa-solid fa-bars"></i></button>
             <!-- =========== Home Section Start =========== -->
@@ -65,8 +56,7 @@
                         <div class="home-info padd-15">
                             <h3 class="hello">Hi, my name is <span class="name">Federico Peirano</span></h3>
                             <h3 class="my-profession">I am <span class="typing">Web designer</span></h3>
-                            <p>I am 20 years old, focused and obsessed with programming with a B2 level of English, graduated with honors from the TIC orientation at the Ort school and currently a student in the career of Systems Analyst at the Ort school tertiary.</p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <p>I am 20 years old, focused and obsessed with programming with a B2 level of English, graduated with honors from the TIC orientation at the Ort school and graduated in the career of Systems Analyst at the Ort school tertiary.</p>
                         </div>
                         <div class="home-img padd-15" id="home-img">
                             <img src="./Imagenes/Foto.jpg" alt="">
@@ -98,95 +88,13 @@
                                             <p>Career: <span>Systems Analyst</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Secondary: <span>Information technology and communication</span></p>
+                                            <p>Secondary: <span>Information technology and communication orientation</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Phone: <span>+54 11 3627-4534</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Location: <span>Argentina, Buenos Aires, San Isidro</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Github: <span>https://github.com/FedePeira</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15 center">
-                                            <a download="CV" href="./Federico Peirano (5).pdf" class="btn">Download CV</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15" id="skills">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div id="css"  class="" ></div>
-                                                <div class="skill-percent">75%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div id="js" class="" ></div>
-                                                <div class="skill-percent">45%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div id="html" class="" ></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JAVA</h5>
-                                            <div class="progress">
-                                                <div id="java" class="" ></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>.NET</h5>
-                                            <div class="progress">
-                                                <div id="net" class="" ></div>
-                                                <div class="skill-percent">20%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>SQL</h5>
-                                            <div class="progress">
-                                                <div id="sql" class=""></div>
-                                                <div class="skill-percent">50%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
-                                            <div class="progress">
-                                                <div id="php" class="" ></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>React</h5>
-                                            <div class="progress">
-                                                <div id="react" class="" ></div>
-                                                <div class="skill-percent">20%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Reac Native</h5>
-                                            <div class="progress">
-                                                <div id="reactnative" class="" ></div>
-                                                <div class="skill-percent">30%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Android Studio</h5>
-                                            <div class="progress">
-                                                <div id="android" class="" ></div>
-                                                <div class="skill-percent">50%</div>
-                                            </div>
+                                            <p>Location: <span>San Isidro, Buenos Aires, Argentina</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -201,19 +109,19 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2015 - 2021
+                                                            <i class="fa fa-calendar"></i> March 2022 - December 2024
                                                         </h3>
-                                                        <h4 class="timeline-title">Secondary School</h4>
-                                                        <p class="timeline-text">Graduated with honors in the TIC orientation of the ORT Institute Belgrano campus</p>
+                                                        <h4 class="timeline-title">Tertiary</h4>
+                                                        <p class="timeline-text">Graduated from the Systems Analyst career at the ORT Institute Belgrano campus.</p>
                                                 </div>
                                                 <!-- =========== Timeline Item =========== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2022 - 2024
+                                                            <i class="fa fa-calendar"></i> March 2016 - December 2021
                                                         </h3>
-                                                        <h4 class="timeline-title">Tertiary</h4>
-                                                        <p class="timeline-text">Graduated from the Systems Analyst career at the ORT Institute Belgrano campus.</p>
+                                                        <h4 class="timeline-title">Secondary School</h4>
+                                                        <p class="timeline-text">Graduated with honors in the TIC orientation of the ORT Institute Belgrano campus</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,18 +136,19 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2022
-                                                        </h3>
-                                                        <h4 class="timeline-title">Seller</h4>
-                                                        <p class="timeline-text">During the year of 2023 I was working as a salesman in the Apio Verde toy store during the times of Children's Day, Christmas and Three Wise Men.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2023
+                                                            <i class="fa fa-calendar"></i> July 2023 - Continuing
                                                         </h3>
                                                         <h4 class="timeline-title">Remote Freelance Programmer</h4>
                                                         <p class="timeline-text">I started in July 2023 at Clarity, a company focused on the management system of other companies.</p>
+                                                </div>
+                                                <!-- =========== Timeline Item =========== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 17/07/22 - 31/07/22
+                                                        </h3>
+                                                        <h4 class="timeline-title">Seller</h4>
+                                                        <p class="timeline-text">During the year of 2023 I was working as a salesman in the Apio Verde toy store during the times of Children's Day, Christmas and Three Wise Men.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,129 +160,7 @@
                 </div>
             </section>
             <!-- =========== About Section End =========== -->
-            <!-- =========== Services Section Start =========== -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">   
-                        <div class="section-title padd-15">
-                            <h2>Skills</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-html5"></i>
-                                </div>
-                                <h4>HTML</h4>
-                                <p>Projects made with html and learning with a Udemy course.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-square-js"></i>
-                                </div>
-                                <h4>Javascript</h4>
-                                <p>Learning through Udemy course.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-css3-alt"></i>
-                                </div>
-                                <h4>CSS</h4>
-                                <p>Projects made with CSS and learning with a Udemy course.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-battle-net"></i>
-                                </div>
-                                <h4>.NET</h4>
-                                <p>Subject taken in the second semester of the degree.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>SQL</h4>
-                                <p>Subject also taken in the second semester of the degree.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-java"></i>
-                                </div>
-                                <h4>JAVA</h4>
-                                <p>Subject taken in the two semesters of the first year of the degree</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                        <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-react"></i>
-                                </div>
-                                <h4>React Native</h4>
-                                <p>Making an application for my Final Project, MediGo.</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-php"></i>
-                                </div>
-                                <h4>PHP</h4>
-                                <p>Lately developing everything in PHP, at the moment the language that interests me the most</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-android"></i>
-                                </div>
-                                <h4>Android Studio / Kotlin</h4>
-                                <p>Subject taken in the last semester of the degree</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                         <!-- =========== Service Item Start =========== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-brands fa-react"></i>
-                                </div>
-                                <h4>React</h4>
-                                <p>Course fullstack from https://fullstackopen.com/es/#course-contents, all the projects on my github</p>
-                            </div>
-                        </div>
-                         <!-- =========== Service Item End =========== -->
-                    </div>  
-                </div>
-            </section>
-            <!-- =========== Services Section End =========== -->
+
             <!-- =========== Portfolio Section Start =========== -->
             <section class="portfolio section" id="portfolio">
                 <div class="container">
@@ -388,80 +175,36 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-item padd-15 mar-40">
-                            <div class="portfolio-item-inner">
-                                <h3>Operation of a Digital Bank</h3>
-                                <p class="description">Exercise Bank with Javascript, HTML y CSS(Usuario: JS - Contraseña: 1111)</p>
-                                <div class="center">
+                        <div class="container-card">
+                            <div class="card">
+                                <figure>
+                                    <img src="Imagenes/BankistCaptura.PNG">
+                                </figure>
+                                <div class="contenido-card">
+                                    <h4 class="timeline-title">Operation of a Digital Bank</h3>
+                                    <p class="timeline-text">Javascript - HTML - CSS(User: JS - Password: 1111)</p>
                                     <a href="https://bankistfunction.netlify.app" class="btn btn-porfolio">Visit</a>
                                 </div>
-                                <div class="line"></div>
-                                <!--
-                                <div class="main-video">
-                                    <center>
-                                       <video class="video" controls>
-                                            <source src="./videos/BankistFunction.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
                             </div>
-                        </div>
-                        <div class="portfolio-item padd-15 mar-40">
-                            <div class="portfolio-item-inner">
-                                <h3>Bank Website</h3>
-                                <p class="description">Exercise Bank page with de Javascript, HTML y CSS</p>
-                                <div class="center">
+                            <div class="card">
+                                <figure>
+                                    <img src="Imagenes/BankistPageCaptura.PNG">
+                                </figure>
+                                <div class="contenido-card">
+                                    <h4 class="timeline-title">Bank Website</h3>
+                                    <p class="timeline-text">Javascript - HTML - CSS</p>
                                     <a href="https://bankistpage.netlify.app" class="btn btn-porfolio">Visit</a>
                                 </div>
-                                <div class="line"></div>
-                                <!--
-                                <div class="main-video">
-                                    <center>
-                                       <video class="video" controls>
-                                            <source  src="./videos/BankisPage.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
                             </div>
-                        </div>
-                        <div class="portfolio-item padd-15 mar-40">
-                            <div class="portfolio-item-inner">
-                                <h3>Food Page</h3>
-                                <p class="description">Exercise page with Javascript, HTML y CSS </p>
-                                <div class="center">
+                            <div class="card">
+                                <figure>
+                                    <img src="Imagenes/OmnifoodPage.JPG">
+                                </figure>
+                                <div class="contenido-card">
+                                    <h4 class="timeline-title">Food Page</h3>
+                                    <p class="timeline-text">Javascript - HTML - CSS</p>
                                     <a href="https://omnifoodpeira.netlify.app/" class="btn btn-porfolio">Visit</a>
                                 </div>
-                                <div class="line"></div>
-                                <!--
-                                <div class="main-video margin--top-1">
-                                    <center>
-                                       <video class="video width--1" controls>
-                                            <source src="./videos/Modelo Instituto.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15 mar-40">
-                            <div class="portfolio-item-inner">
-                                <h3>APK Application MediGo</h3>
-                                <p class="description">Application made in Final Project for ORT in 2 and half months</p>
-                                <div class="center">
-                                    <a href="./app-release (1).apk" class="btn btn-porfolio" download>Download in Phone</a>
-                                </div>
-                                <div class="line"></div>
-                                <!--
-                                <div class="main-video margin--top-1">
-                                    <center>
-                                       <video class="video width--1" controls>
-                                            <source src="./videos/Modelo Instituto.mp4">
-                                       </video>
-                                    </center>
-                                </div>
-                                -->
                             </div>
                         </div>
                     </div>
@@ -476,11 +219,7 @@
                             <h2>Contact Me</h2>
                         </div>
                     </div>
-                    <!-- 
-                    <h3 class="contact-title padd-15">Do you have any questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I am at your availability</h4>
-                -->
-                    <div class="row">
+                    <div class="row center">
                         <!-- =========== Contact Item Start =========== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
@@ -502,24 +241,7 @@
                             <p>fedepr2345@gmail.com</p>
                         </div>
                         <!-- =========== Contact Item End =========== -->
-                        <!-- =========== Contact Item Start =========== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>https://federicopeirano.netlify.app/</p>
-                        </div>
-                        <!-- =========== Contact Item End =========== -->
                     </div>
-                    <!-- =========== Contact Form Start =========== -->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="btns-contact padd-15">
-                                <a href="https://web.whatsapp.com/" target="_blank"><button class="btn btn-whatsapp">Whatsapp</button></a>
-                                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqVNfDKVbqjBrgfDSjzXKbZcxrDmGcBkTrxNNxTTPfCQnKZPQNqXjDGkbcxgjSrDFHgpNV"><button class="btn btn-whatsapp">Email</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =========== Contact Form End =========== -->
                 </div>
             </section>
             <!-- =========== Contact Section End =========== -->
@@ -530,5 +252,6 @@
     <!-- JS Files -->
     <script defer src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js@2.0.11/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
 </html>

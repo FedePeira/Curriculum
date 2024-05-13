@@ -48,29 +48,6 @@ allLinks.forEach(function (link) {
   });
 });
 
-///////////////////////////////////////////////////////////
-// Scroll Skills Animation
-window.onscroll = function() {
-  efectSkills()
-}
-
-// Animation on skills
-function efectSkills() {
-  var skills = document.getElementById("skills");
-  var distancia_skills = window.scrollY + skills.getBoundingClientRect().top;
-  if(distancia_skills >= 300) {
-      document.getElementById("css").classList.add("css");
-      document.getElementById("js").classList.add("js");
-      document.getElementById("html").classList.add("html");
-      document.getElementById("net").classList.add("net");
-      document.getElementById("sql").classList.add("sql");
-      document.getElementById("php").classList.add("php");
-      document.getElementById("react").classList.add("react");
-      document.getElementById("reactnative").classList.add("reactnative");
-      document.getElementById("android").classList.add("android");
-      document.getElementById("java").classList.add("java");
-  }
-}
 
 ///////////////////////////////////////////////////////////
 // Scroll Skills Animation
@@ -123,44 +100,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
   }
 });
-
-///////////////////////////////////////////////////////////
-// Hamburguer Menu
-const openButton = document.querySelector("#open");
-const closeButton = document.querySelector("#close");
-const navHeader = document.querySelector("#nav");
-const header = document.querySelector("#header");
-
-
-openButton.addEventListener("click", () => {
-  navHeader.classList.add("visible");
-  header.classList.remove("hidden");
-})
-
-closeButton.addEventListener("click", () => {
-  navHeader.classList.remove("visible");
-  header.classList.add("hidden");
-})
-
-/*
-window.addEventListener('resize', function() {
-  var width = window.innerWidth;
-  var header = document.querySelector('.header');
-  var aside = document.querySelector('.aside');
-  var home = document.querySelector('.home');
-
-
-  if (width <= 1150) {
-    aside.classList.add('hidden');
-    header.classList.remove('hidden');
-    home.classList.add('margin--top-2')
-  } else {
-    aside.classList.remove('hidden');
-    header.classList.add('hidden');
-    home.classList.remove('margin--top-2')
-  }
-});
-*/
 
 ///////////////////////////////////////////////////////////
 // Home Image Hidden 991px
