@@ -1,117 +1,124 @@
 'use strict';
-///////////////////////////////////////////////////////////
-// Type Animation
 
+console.log('✅ script.js cargado correctamente');
+
+///////////////////////////////////////////////////////////
+// DOM Ready
 document.addEventListener("DOMContentLoaded", function() {
-  var typed = new Typed(".typing",{
+  ///////////////////////////////////////////////////////////
+  // Type Animation
+  const typingEl = document.querySelector(".typing");
+  if (typingEl) {
+    new Typed(".typing", {
       strings: ["Web designer", "Programmer", "Student", "Developer"],
-      typeSpeed:100,
-      backSpeed:60,
-      loop:true
-  });
-});
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    });
+  }
 
-document.addEventListener("DOMContentLoaded", function() {
-  var typed = new Typed(".typing-es",{
+  const typingEsEl = document.querySelector(".typing-es");
+  if (typingEsEl) {
+    new Typed(".typing-es", {
       strings: ["Diseñador Web", "Programador", "Estudiante", "Desarrollador"],
-      typeSpeed:100,
-      backSpeed:60,
-      loop:true
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    });
+  }
+
+  ///////////////////////////////////////////////////////////
+  // Smooth scroll
+  const allLinks = document.querySelectorAll("a:link");
+  const headerEl = document.querySelector(".header");
+
+  allLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      const href = link.getAttribute("href");
+
+      if (href === "#") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      if (href !== "#" && href.startsWith("#")) {
+        const sectionEl = document.querySelector(href);
+        if (sectionEl) {
+          sectionEl.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      if (link.classList.contains("main-nav-link")) {
+        if (headerEl) headerEl.classList.toggle("nav-open");
+      }
+    });
   });
-});
 
+  ///////////////////////////////////////////////////////////
+  // Language Switcher
+  const check = document.querySelector(".check");
+  if (check) {
+    check.addEventListener("click", changeLanguage);
 
-///////////////////////////////////////////////////////////
-// Smooth scrolling animation
-const allLinks = document.querySelectorAll("a:link");
+    let language = localStorage.getItem("language");
+    applyColors(language);
 
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    const href = link.getAttribute("href");
+    function changeLanguage() {
+      let id = check.checked;
+      let enElement = document.querySelector(".en");
+      let esElement = document.querySelector(".es");
 
-    // Scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+      if (!id) {
+        localStorage.setItem("language", "es");
+        setTimeout(function () {
+          location.href = "./es/index.html";
+        }, 100);
+      } else {
+        localStorage.setItem("language", "en");
+        setTimeout(function () {
+          location.href = "../index.html";
+        }, 100);
+      }
     }
 
-    // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
-  });
-});
+    function applyColors(language) {
+      let enElement = document.querySelector(".en");
+      let esElement = document.querySelector(".es");
+      if (language === "es") {
+        enElement?.classList.remove("es-selected");
+        esElement?.classList.add("en-selected");
+      } else {
+        enElement?.classList.add("en-selected");
+        esElement?.classList.remove("es-selected");
+      }
+    }
+  }
 
-
-///////////////////////////////////////////////////////////
-// Scroll Skills Animation
-window.onload = function() {
-  var timelineItems = document.querySelectorAll('.timeline-item');
-    timelineItems.forEach(function(item) {
-        item.addEventListener('mouseover', function() {
-            item.classList.add('visible');
-        });
+  ///////////////////////////////////////////////////////////
+  // Scroll Skills Animation
+  const timelineItems = document.querySelectorAll(".timeline-item");
+  timelineItems.forEach(function (item) {
+    item.addEventListener("mouseover", function () {
+      item.classList.add("visible");
     });
-};
+  });
 
-///////////////////////////////////////////////////////////
-// Change of Language
-document.addEventListener('DOMContentLoaded', (event) => {
-  var check = document.querySelector(".check");
-  check.addEventListener('click', changeLanguage);
-
-  // Aplica los colores correctos al cargar la página
-  let language = localStorage.getItem('language');
-  applyColors(language);
-
-  function changeLanguage() {
-      let id = check.checked;
-      let enElement = document.querySelector('.en');
-      let esElement = document.querySelector('.es');
-      
-      if(id == false) {
-          localStorage.setItem('language', 'es');
-          setTimeout(function() {
-              location.href = "./es/index.html";
-          }, 100);
+  ///////////////////////////////////////////////////////////
+  // Home Image Hidden 991px
+  function checkWindowSize() {
+    const width = window.innerWidth;
+    const homeImg = document.getElementById("home-img");
+    if (homeImg) {
+      if (width <= 991) {
+        homeImg.classList.add("hidden");
       } else {
-          localStorage.setItem('language', 'en');
-          setTimeout(function() {
-              location.href = "../index.html";
-          }, 100);
+        homeImg.classList.remove("hidden");
       }
+    }
   }
 
-  function applyColors(language) {
-      let enElement = document.querySelector('.en');
-      let esElement = document.querySelector('.es');
-      if (language === 'es') {
-          enElement.classList.remove('es-selected');
-          esElement.classList.add('en-selected');
-      } else {
-          enElement.classList.add('en-selected');
-          esElement.classList.remove('es-selected');
-      }
-  }
+  checkWindowSize();
+  window.addEventListener("resize", checkWindowSize);
 });
-
-///////////////////////////////////////////////////////////
-// Home Image Hidden 991px
-function checkWindowSize() {
-  var width = window.innerWidth;
-  var homeImg = document.getElementById('home-img');
-
-  if (width <= 991) {
-      homeImg.classList.add('hidden');
-  } else {
-      homeImg.classList.remove('hidden');
-  }
-}
-checkWindowSize();
-window.addEventListener('resize', checkWindowSize);
